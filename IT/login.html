@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        <link rel="stylesheet" href="css/login.css">
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <div id="all">
+            <div id="back">
+                <a href="#"><img src="img/Logo0.png"></a>
+            </div>
+            
+        <div id="mid">
+
+                <form>
+                    <p id="wrong">username or password wrong</p>
+                    <input class="valid" type="text" name="username" placeholder="username"><br>
+                    <input class="valid" type="password" name="password" placeholder="password"><br>
+                    <button onclick="check()" type="button">login</button>
+                        <p >Not registered?<a href="Sign up.html">create account</a>&emsp;&emsp; <a id="l" href="reset password.html">forgot password</a></p>
+                        
+          
+                </form>
+            
+
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

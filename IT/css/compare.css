@@ -1,0 +1,211 @@
+/*start responsive nav*/
+
+#newnav .login{
+    right: 5px;
+}
+
+#newnav{
+    display: none;
+}
+#newnav img{
+    height: 60px;
+    width: 100px;
+    margin: 0;
+}
+#newnav a{
+    margin-left: auto;
+    margin-right: auto;
+} 
+#newnav input{
+    margin-top: 12px;
+    background-color: #f43f3f;
+    border: none;
+}
+#newnav i{
+    font-size: 25px;
+    float: left;
+    margin-top: 20px;
+ }
+ #menu{
+     background-color: white;
+     
+     border-right: 1px solid black;
+     position: fixed;
+     overflow: hidden;
+    width: 0;
+     top: 0;
+     left: 0;
+     z-index: 1100;
+    height: 100%;
+    transition: 2s ease;
+    animation-duration: 1s;
+     
+ }
+ @keyframes men{
+     0%{
+         width: 0;
+     }
+     100%{
+         width: 400px;
+     }
+ }
+ @keyframes nem{
+    from{
+        width: 400px;
+    }
+    to{
+        width: 0;
+    }
+}
+#menu ul{
+    list-style: none;
+    margin: 50px;
+    overflow: hidden;
+}
+#menu li{
+    padding: 20px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+#menu a{
+    width: 100%;
+    height: 100%;
+}
+#menu a:hover ,.menu li:hover{
+    background-color: #f43f3f;
+    color: white ;
+}
+/*responsive nav end*/
+#compare-layout{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+#compare-layout form{
+    padding: 10px 50px 10px 50px;
+background-color: #f43f3f;
+width: inherit;
+margin: auto;
+display: flex;
+}
+ button{
+    background-color: tomato;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: orange;
+}
+#compare-layout input{
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#op{
+    width: inherit;
+    display: flex;
+}
+.choose{
+margin: auto;
+}
+.riglist,.lelist{
+    width: 300px;    display: none;
+
+}
+.lelist a ,.riglist a {
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.lelist p,.riglist p{
+    font-size: 10pt;
+    display: block
+}
+.lelist:hover,.riglist:hover{
+    box-shadow: gray 3px 3px 6px;
+}
+.limg{
+    margin-right: 20px;
+    width: 50%;
+}
+#rated-display{
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.ratd{
+    background-color: #f43f3f;
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 30px 0 30px 0;
+    margin-top: 10px;
+
+}
+.ratd:nth-child(2){
+    border-radius: 0 30px 0 30px;
+}
+.probar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: flex;
+    color: white;
+    font-size: 15pt;
+    
+
+}
+.bar{
+    background-color: white;
+    margin:auto ;
+    width: 140px;
+    height: 10px;
+    border-radius: 30px;
+}
+.leprogress,.riprogress{
+    background-color: lawngreen;
+    width: 0;
+    height: 10px;
+    border-radius: 30px;
+}
+.leh,.rih{
+    color: white;
+}
+@media(max-width:960px){
+    #compare-layout{
+        width: 700px;
+    }
+    #rated-display{
+        display: block;
+    }
+}
+@media(max-width:700px){
+    #oldnav{
+        display: none;
+    }
+    #newnav{
+        display: block;
+    }
+    #compare-layout{
+        width: 500px;
+    } 
+    #compare-layout form{
+        padding: 10px 5px 10px 5px;
+    }
+    .lelist,.riglist{
+        width: 200px;
+
+    }
+}

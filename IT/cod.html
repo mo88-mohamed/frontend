@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <!--start responsive nav-->
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+             <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+        <!--end-->
+        <!--start header-->
+        <div id="banner ">
+            <div id="screen-vid">
+                <video class="vid" autoplay loop muted  src="videos/cod.mp4"></video>
+            </div>
+  
+            <div id="over" >
+                <div id="info">
+                    <h1>call of duty warzone</h1>
+                    <h4>developer:<span>infinty ward</span> </h4>
+                    <h4>Rating:<span>Mature</span> </h4>
+                    <h4>Platforms: <span> pc,ps4,xboxone </span></h4>
+                    <i onclick="full()" id="full" class="fa fa-arrows-alt" ></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="full-vid">
+            
+            <video   id="myVideo" pause  muted  src="videos/cod.mp4" onmouseover="show()" onmouseout="hide() "  onclick="pauseVid()"></video>
+            <!--start player-->
+            <div class="controls"onmouseover="show()"onmouseout="hide()">
+                <i class="fa fa-play-circle playic"onclick="state()"></i>
+                <i class="fa fa-pause-circle playic" aria-hidden="true" onclick="state()" style="display:none;"></i>
+                <p><span id="current_vid_time"  >0</span>:<span id="sec">00</span>/<span class="vid-end">00</span>:<span class="vid-end">00</span></p>
+                
+                <i class="fa fa-undo ico" aria-hidden="true" onclick="backward()"></i>
+                <div class="vidprog">
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                </div>
+                <i class="fa fa-repeat ico" aria-hidden="true" onclick="forward()"></i>
+                <i class="fa fa-volume-off ico" aria-hidden="true" onclick="mute()"></i>
+
+                <i class="fa fa-plus-circle ico" aria-hidden="true" onclick="volup()"></i>
+                <i class="fa fa-minus-circle ico" aria-hidden="true"onclick="voldown()"></i>
+
+            </div>
+            <!--end-->
+            <div id="overlay" >
+                <h4 onclick="l()" id="close"  >x</h4>
+            </div>
+        </div> 
+        <!--end-->
+        <!--content start-->
+        <div class="review">
+            <p>
+                The latest Call of Duty from Infinity Ward shipped without an answer to Black Ops 4’s Blackout, but it has since been supplemented by Warzone--a completely standalone battle royale built off of the backbone of Modern Warfare. Not only is it a smarter way to ensure it's not tied to each annual release in the series, but Warzone gives the series its own identity within the competitive genre.        
+                It might not be apparent at first, though, especially when you take into consideration how much Warzone borrows from other popular battle royale games. It incorporates a ping system similar to the one in Apex Legends, letting you tag enemy positions, points of interest, and loot for teammates at the press of a button (albeit mapped to a button that's harder to reach quickly, mitigating some of its convenience). It plays out on a massive map akin to PlayerUnknown's Battlegrounds, where large swathes of open land are ripe for snipers while dense suburbs make for exhilarating and chaotic close-quarters skirmishes. And like the ones in Fortnite, color-coded chests overflowing with loot are easy to hunt down when you are within earshot of their signature emanating jingle.
+
+            </p> 
+               <p> 
+                None of these competitors are defined solely by the elements Warzone borrows from them, and Warzone isn't defined by the sum of their parts. Instead, Warzone uses them to establish a solid foundation for its own distinct elements. It starts with a larger player count than the aforementioned battle royale games, with Warzone currently supporting up to 150 players per match, with modes for three-person squads or solo play. Having so many players active at once keeps you constantly on alert, but also increases the odds that you'll at least have some action (and likely a handful of kills) each match. This makes even some of the least successful drops feel worthwhile--even if your entire match lasts only a handful of minutes, you'll likely get some valuable time in with some weapons, better preparing you for another fight in the next match.
+
+            </p>
+            <!--start slideshow-->
+            <div class="slidecontainer">
+
+                <div class="slideshow">
+                    <img  src="img/c1.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/c2.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/c3.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/c4.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/c5.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/c6.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    
+                </div> 
+            </div>
+            <!--end-->
+         <p>
+            You're likely to feel right at home with many areas of Warzone's map, too, if you've already been playing Modern Warfare. Many of its named areas use identical layouts as those in Modern Warfare proper as well as previous installments, so you can navigate them using muscle memory--and they're intuitive enough to learn from scratch, too. Breaking up large swathes of dangerously open fields are dense and cramped suburbs filled with tall high-rises or mazes of storage rooms. It's easy to lose pursuers in the twisting streets of Downtown or hide in the large industrial factories of the Lumberyard, rewarding your memory of their respective layouts as you turn an ambush into an opportunity to attack. Large buildings can get frustrating with their long stairwells as loot is only hidden on the ground and top floors, but even these force you to think about what advantages you might reap with the extra elevation against the disadvantages of trapping yourself in a narrow hallway to get there first.
+
+
+         </p>
+         <p>
+            Warzone minimizes downtime, encouraging you to get into a fight with an aggressively fast closing circle and streamlined mechanics governing your loot. Unlike most other games in the genre, Warzone doesn't task you with micro-managing items in a limited-space backpack. Instead, you have pre-defined slots of ammunition types, armour-plating, and cash. The rest of your loadout works identically to a standard Modern Warfare multiplayer match--you have two weapon slots, one lethal grenade and one utility grenade slot each, and one slot for field equipment (perks like FMJ ammunition, recon drones, and more).
+
+
+         </p>
+         <p>
+            Weapons drop with attachments already equipped based on their overall rarity (this ranges from the stock white drops to fully kitted-out orange ones), and there's no option to customize them outside of what they already feature. This makes early looting extremely quick. It's easy to find two suitable primary weapons and stockpile some ammunition early on, which lets you focus more on hunting other players than staying out of sight in pursuit of attachments to your gear. It also feeds into Warzone's changes to both an in-game economy and its principles around respawning, both of which benefit from allowing you to go from your starting pistol to battle-ready in a few minutes flat.
+
+
+         </p>
+            <!--system req start-->
+            <h1>System requirements</h1>
+            <div class="req">
+                
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">Minmum requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                       
+ 
+                    </tr>
+                    <tr>
+                        <td>amd</td>
+                        <td>gtx</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>60g</td>
+
+                    </tr>
+        
+  
+                </table>
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">recommended requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                    </tr>
+                    <tr>
+                        <td>amd</td>
+                        <td>gtx</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>60g</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+      
+            <p>
+                Cash is central to Warzone's spin on the genre. You earn cash by looting it, killing other players, or completing small optional objectives (such as hunting down another player or securing an area for a short time). Buy stations are littered around the map, and if you have the cash, you can spend it on useful killsteaks like UAVs, airstrikes, and shield turrets--but also on useful gear like additional armour-plating and self-revive kits. The most expensive purchase is a full loadout drop, letting you airdrop in a crate and equip your squad with their own handcrafted loadouts and perks from their own inventories.
+
+            </p>
+            <p>
+                This is the largest twist in Warzone in terms of its effect on the overall focus of the mode. Other battle royales force you to make do with what you can scavenge, but Warzone shifts that focus on collecting as much cash as you can and getting the loadout of your choice. Despite being the most expensive purchase right now, it's incredibly easy for a team of three players to collectively gather enough money within the opening moments of a match to secure their premade loadouts. It's already common to find players using thermal scopes and the Cold-Blooded perk to combat it, but generally, the inclusion of a loadout drop dilutes the dynamism of matches by making loot count for a lot less. It's no longer a scrappy rush to try and equip yourself with what you can find, but a brief interlude before hunting other players with weapons you've specifically chosen for Warzone and its structure.
+
+            </p>
+            <p>
+                Warzone is a great sophomore attempt at a battle royale from Call of Duty, which finally manages to carve out its own identity with interesting spins on the existing formula. Its subversion of death and the nail-biting Gulag duels give you more ways to stay in a match, while also forcing you to be aware of your surroundings even after wiping a rival squad. Its looting is streamlined enough to make early moments feel fast, but Warzone also loses some of the messy magic from hobbled together loadouts by letting you drop in prebuilt ones far too easily and frequently. Still, if you're comfortable with Call of Duty's latest iteration of multiplayer antics and thrive in the stressful setting of battle royales, Warzone is a strong contender for your attention.
+
+
+            </p>
+        </div>
+        <!--start hardware test-->
+
+        <!--start rating-->
+        </div>
+        <div class="rated">
+            
+            <h2 style="color: white; text-align: center;">game rating</h2>
+
+            
+            <section>
+                <div class="probar">
+                    graphic
+                    <div class="bar">
+                        <div class="progress "style="width:98%;"></div>
+                    </div>
+                    98%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    gameplay
+                    <div class="bar">
+                        <div class="progress "style="width:70%;"></div>
+                    </div>
+                    70%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    controls
+                    <div class="bar">
+                        <div class="progress "style="width:80%;"></div>
+                    </div>80%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    optimaizing
+                    <div class="bar ">
+                        <div class="progress "style="width:92%;"></div>
+                    </div>92
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    servers
+                    <div class="bar">
+                        <div class="progress "style="width:80%;"></div>
+                    </div>80%
+                </div>
+            </section>
+    </div>
+
+
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/player.js"></script>
+    </body>
+</html>

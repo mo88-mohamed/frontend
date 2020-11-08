@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+        <link rel='stylesheet' type='text/css' media='screen' href='css/compare.css'>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- YOUR PAGE STYLESHEET HERE !!! -->
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+                <nav id="oldnav">
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+      
+        <div id="compare-layout">
+            <form>
+               <input type="text" class="ser"  placeholder="game name...">
+               <button onclick="search()" type="button">compare</button>
+               <input type="text" class="ser" placeholder="game name...">
+               
+            </form>
+            <div id="op">
+                <div class="choose">
+                    <div class="lelist">
+                        <a href="valorant.html">                    
+                            <img class="limg"src="img/v1.jpg">
+                            <div>
+                                <h5>valorant</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lelist">
+                        <a href="hyper.html">                    
+                            <img class="limg"src="img/h1.jpg">
+                            <div>
+                                <h5>hyperscape</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lelist">
+                        <a href="minecraft.html">                    
+                            <img class="limg"src="img/m1.jpg">
+                            <div>
+                                <h5>minecraft</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lelist">
+                        <a href="tomp.html">                    
+                            <img class="limg"src="img/t1.jpg">
+                            <div>
+                                <h5>tomp raider</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lelist">
+                        <a href="nfs.html">                    
+                            <img class="limg"src="img/n1.jpg">
+                            <div>
+                                <h5>nfs pay back</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="lelist">
+                        <a
+                        href="cod.html">                    
+                            <img class="limg"src="img/t1.jpg">
+                            <div>
+                                <h5>tomp rider</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="choose">
+                    <div class="riglist">
+                        <a href="valorant.html">                    
+                            <img class="limg"src="img/v1.jpg">
+                            <div>
+                                <h5>valorant</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="riglist">
+                        <a href="hyper.html">                    
+                            <img class="limg"src="img/h1.jpg">
+                            <div>
+                                <h5>hyperscape</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="riglist">
+                        <a href="minecraft.html">                    
+                            <img class="limg"src="img/m1.jpg">
+                            <div>
+                                <h5>minecraft</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="riglist">
+                        <a href="tomp.html">                    
+                            <img class="limg"src="img/t1.jpg">
+                            <div>
+                                <h5>tomp rider</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="riglist">
+                        <a href="nfs.html">
+                        <img class="limg"src="img/n1.jpg">
+                        <div>
+                            <h5>nfs payback</h5>
+                            <p>see full reveiw</p></div>
+                        </a> 
+                    </div>
+                    <div class="riglist">
+                        <a href="cod.html">                    
+                            <img class="limg"src="img/c1.jpg">
+                            <div>
+                                <h5>call of duty warzone</h5>
+                                <p>see full reveiw</p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div id="rated-display">
+                <div class="ratd">
+            
+                        <section>
+                            <div class="probar">
+                                graphic
+                                <div class="bar">
+                                    <div class="leprogress "></div>
+                                </div>
+                                <h4 class="leh">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                gameplay
+                                <div class="bar">
+                                    <div class="leprogress "></div>
+                                </div>
+                                <h4 class="leh">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                controls
+                                <div class="bar">
+                                    <div class="leprogress "></div>
+                                </div><h4 class="leh">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                optimaizing
+                                <div class="bar ">
+                                    <div class="leprogress "></div>
+                                </div><h4 class="leh">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                servers
+                                <div class="bar">
+                                    <div class="leprogress "></div>
+                                </div><h4 class="leh">0%</h4>
+                            </div>
+                        </section>
+        
+                </div>
+                <div class="ratd">
+
+                        <section>
+                            <div class="probar">
+                                graphic
+                                <div class="bar">
+                                    <div class="riprogress "></div>
+                                </div>
+                                <h4 class="rih">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                gameplay
+                                <div class="bar">
+                                    <div class="riprogress "></div>
+                                </div>
+                                <h4 class="rih">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                controls
+                                <div class="bar">
+                                    <div class="riprogress "></div>
+                                </div><h4 class="rih">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                optimaizing
+                                <div class="bar ">
+                                    <div class="riprogress "></div>
+                                </div><h4 class="rih">0%</h4>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="probar">
+                                servers
+                                <div class="bar">
+                                    <div class="riprogress "></div>
+                                </div><h4 class="rih">0%</h4>
+                            </div>
+                        </section>
+                </div>
+                </div>
+            
+        </div>
+        <script src="js/compare.js"></script>
+        <script src="js/menu.js"></script>
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

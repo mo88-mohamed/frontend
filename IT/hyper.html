@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <!--start responsive nav-->
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+        <!--end-->
+        <!--start header-->
+        <div id="banner ">
+            <div id="screen-vid">
+                <video class="vid" autoplay loop muted  src="videos/hyper.mp4"></video>
+            </div>
+  
+            <div id="over" >
+                <div id="info">
+                    <h1>hyper scape</h1>
+                    <h4>developer:<span>upisoft</span> </h4>
+                    <h4>Rating:<span>teen</span> </h4>
+                    <h4>Platforms: <span>ps4 , xboxone , pc , android</span></h4>
+                    <i onclick="full()" id="full" class="fa fa-arrows-alt" ></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="full-vid">
+            
+            <video   id="myVideo" pause  muted  src="videos/hyper.mp4" onmouseover="show()" onmouseout="hide() "  onclick="pauseVid()"></video>
+            <!--start player-->
+            <div class="controls"onmouseover="show()"onmouseout="hide()">
+                <i class="fa fa-play-circle playic"onclick="state()"></i>
+                <i class="fa fa-pause-circle playic" aria-hidden="true" onclick="state()" style="display:none;"></i>
+                <p><span id="current_vid_time"  >0</span>:<span id="sec">00</span>/<span class="vid-end">00</span>:<span class="vid-end">00</span></p>
+                
+                <i class="fa fa-undo ico" aria-hidden="true" onclick="backward()"></i>
+                <div class="vidprog">
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                </div>
+                <i class="fa fa-repeat ico" aria-hidden="true" onclick="forward()"></i>
+                <i class="fa fa-volume-off ico" aria-hidden="true" onclick="mute()"></i>
+
+                <i class="fa fa-plus-circle ico" aria-hidden="true" onclick="volup()"></i>
+                <i class="fa fa-minus-circle ico" aria-hidden="true"onclick="voldown()"></i>
+
+            </div>
+            <!--end-->
+            <div id="overlay" >
+                <h4 onclick="l()" id="close"  >x</h4>
+            </div>
+        </div> 
+        <!--end-->
+        <!--content start-->
+        <div class="review">
+            <p>
+                There are three Twitch tie-ins that Ubisoft is promising. The first is viewer events, where viewers are able to vote on game mode modifiers like low-gravity and infinite ammo, similar to how Twitch viewers can vote in tougher enemies when watching Borderlands 3 streams. The second is that Twitch viewers will be able to progress their battle pass simply by watching Hyper Scape. And the third is squad invites, where a streamer will be able to pull chosen viewers directly into their game without having to add them as a friend via Uplay. The last two won’t be available at launch, but together this integration will make streaming and viewing as much a part of Hyper Scape as playing.
+
+        
+                So, how is the playing? Renovation rather than innovation is the flavour of Hyper Scape’s gameplay mechanics, with hero-like abilities available as floor loot, an emphasis on upgrading weapons rather than looting specific attachments, and high mobility being the standout features. Other twists, like an entirely urban map, jump pads that allow easy rooftop access, and a more generous squad revive system which ensures you’re never out of the fight for long. It’s an all-action spin on a genre that often caters to stealthier play styles, and while there are some nods to those roots in the form of an invisibility hack and the ability to win without eliminating anyone, Hyper Scape still feels like it’s been designed with aggressive, highly skilled play in mind.
+
+            </p> 
+               <p> 
+                The lootable abilities, or hacks as they’re called in-game, offer a huge range of proficiencies from basic healing and temporary armour buffs, to transforming into a giant orb that can bounce over buildings. There are walling abilities you can deploy to either escape or trap an enemy into a fight.
+
+            </p>
+            <!--start slideshow-->
+            <div class="slidecontainer">
+
+                <div class="slideshow">
+                    <img  src="img/h1.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/h2.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/h3.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/h4.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/h5.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/h6.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    
+                </div> 
+            </div>
+            <!--end-->
+         <p>
+            You can turn invisible for a short duration, allowing you to slip by a squad undetected, which is especially handy if you’ve just revived and need to scrape together some weapons. There’s a gravity slam ability, where you can drop onto a squad from above and deal huge AoE damage, leading to some rapid squad wipes. A quick teleport hack enables you to duck in and out of fights with ease, and there’s even a tracking ability that Apex Legends players will recognise from Pathmaker’s moveset.
+
+
+         </p>
+         <p>
+            Few of these abilities feel particularly potent on their own, and the simplest solution to most fights is to shoot the enemy more times than they shoot you. However, there are some hacks that pair really well together, like the slam ability and temporary armour buff. Use the slam to catch an enemy squad off guard and deal massive damage across their team, then immediately use the armour buff to tank their reactionary fire.
+
+
+         </p>
+         <p>
+            Meanwhile, your teammates can rain fire down from above while the enemy squad is still trying in vain to eliminate you. Similarly, the tracking and invisibility hacks synergise brilliantly so you can stalk a single target and catch them totally unaware.
+
+
+         </p>
+            <!--system req start-->
+            <h1>System requirements</h1>
+            <div class="req">
+                
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">Minmum requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                       
+ 
+                    </tr>
+                    <tr>
+                        <td>core i3-4340</td>
+                        <td>gtx 670</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>175g</td>
+
+                    </tr>
+        
+  
+                </table>
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">recommended requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                    </tr>
+                    <tr>
+                        <td>core i5-2500k</td>
+                        <td>gtx 970</td>
+                        <td>16g</td>
+                        <td>windows 10</td>
+                        <td>175g</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+      
+            <p>
+                Hacks are also great for creating total chaos across Hyper Scape’s urban battlefield. In my time with the game I’ve been jumped by squads of giant bouncing balls, trapped in place by virtual walls, and then joined by another group of previously invisible enemies. I couldn’t tell you what the result of the brawl was. I saw one ball ‘pop’ mid-air and the player inside perish before landing, my teammates died and then respawned and then died again, and I picked up a shiny new gun in all the chaos before armouring up and escaping via a jump pad.
+
+            </p>
+            <p>
+                As exhilarating as an omnishambles like this can be, the mix of hacks and high mobility can make gunfights completely unreadable. This problem is only exacerbated by Hyper Scape’s squad revive mechanic, which allows eliminated players to roam around as digital-ghosts. The intention is that they can scout ahead of their surviving teammates, which occasionally helps, but more often than not they turn already chaotic firefights into disaster zones by obscuring targets.
+
+
+            </p>
+            <p>
+                Ultimately, having anything in common with one of the best multiplayer games of the past few years is no bad thing, but a lack of personality is harder to overcome as a player. Ubisoft plans to layer in story elements as part of Hyper Scape’s season-based post-launch cycle, but the Tron-inspired virtual world and neo-Parisian map currently feel bland, with uniform buildings and little to distinguish one district from another. Hopefully, a little more life can be injected into this world, because the core gameplay is sharp and I’m eager to see what skilled players can string together with the game’s versatile hacking abilities.
+
+            </p>
+        </div>
+
+        <!--start rating-->
+        </div>
+        <div class="rated">
+            
+            <h2 style="color: white; text-align: center;">game rating</h2>
+
+            
+            <section>
+                <div class="probar">
+                    graphic
+                    <div class="bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                    50%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    gameplay
+                    <div class="bar">
+                        <div class="progress "style="width: 40%;"></div>
+                    </div>
+                    40%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    controls
+                    <div class="bar">
+                        <div class="progress " style="width: 90%;"></div>
+                    </div>90%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    optimaizing
+                    <div class="bar ">
+                        <div class="progress "style="width: 20%;"></div>
+                    </div>20%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    servers
+                    <div class="bar">
+                        <div class="progress " style="width: 70%;"></div>
+                    </div>70%
+                </div>
+            </section>
+    </div>
+
+
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/player.js"></script>
+    </body>
+</html>

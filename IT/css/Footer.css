@@ -1,0 +1,148 @@
+footer{
+    margin-top: auto;
+    width: 100%;
+}
+
+.top-footer{
+    background: #333333;
+    padding: 40px 40px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.top-footer h1, .top-footer p, .top-footer a{
+    color: white;
+}
+
+.top-footer h1{
+    margin-bottom: 20px;
+}
+
+.top-footer p:first-of-type{
+    margin-bottom: 30px;
+}
+
+.contact li, .contact-img img{
+    padding: 5px 0;
+}
+
+.links li{
+    display: list-item;
+    list-style: none;
+    color: white;
+    margin: 14px;
+}
+
+.links a{
+    text-decoration: none;
+    border-bottom: 2px solid #333333;
+    transition: border-bottom 0.3s ease;
+}
+
+.links a:hover{
+    border-bottom: 2px solid rgb(27, 27, 27);
+}
+.bottom-footer {
+    width:100%;
+    background: #333333;
+    text-align: center;
+}
+.bottom-footer p{
+    padding: 10px;
+    background: #333333;
+    color: white;
+}
+
+.contact li{
+    display: inline-block;
+    list-style: none;
+    color: white;
+    width: 80%;
+    /* margin: 0; padding: 0; */
+    margin: 2px 0 2px 26px;
+}
+
+.contact-img{
+    position: absolute;
+    float: left;
+}
+
+.contact-img img{
+    margin: 3px 0;
+    width: 16px;
+}
+
+.contact-us-form input, .contact-us-form textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    outline: none;
+    resize: none;
+}
+
+.contact-us-form div{
+    position: relative;
+    margin: 20px 0 10px 0;
+}
+
+.contact-us-form input:not([type="submit"]){
+    background: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(136, 136, 136);
+    border-radius: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.contact-us-form input:not([type="submit"]):focus{
+    box-shadow: none;
+    border-bottom: 2px solid rgb(27, 27, 27);
+}
+
+.contact-us-form label{
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 0;
+    font-size: 18px;
+    padding-left: 15px;
+    line-height: 50px;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.contact-us-form input:focus + label,
+.contact-us-form input:valid + label{
+    top: -30px;
+    padding-left: 0;
+    font-size: 14px;
+}
+
+.contact-us-form textarea{
+    background: #333333;
+    border: 2px solid rgb(136, 136, 136);
+    color: white;
+    transition: border 0.3s ease;
+    font-size: 18px;
+}
+
+.contact-us-form textarea:focus, form input[type="submit"]:hover{
+    border: 2px solid rgb(27, 27, 27);
+}
+
+.contact-us-form input[type="submit"]{
+    width: auto;
+    margin: 10px auto; padding: 10px 40px;
+    background: #333333;
+    color: white;
+    border: 2px solid rgb(136, 136, 136);
+    font-size: 20px;
+    transition: border 0.3s ease;
+}
+
+#errorMessage{
+    color: #ED1B24;
+}

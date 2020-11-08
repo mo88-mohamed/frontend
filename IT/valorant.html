@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <!--start responsive nav-->
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+        <!--end-->
+        <!--start header-->
+        <div id="banner ">
+            <div id="screen-vid">
+                <video class="vid" autoplay loop muted  src="videos/valorant.mp4"></video>
+            </div>
+  
+            <div id="over" >
+                <div id="info">
+                    <h1>valorant</h1>
+                    <h4>developer:<span>riot games</span> </h4>
+                    <h4>Rating:<span>teen</span> </h4>
+                    <h4>Platforms: <span> pc  </span></h4>
+                    <i onclick="full()" id="full" class="fa fa-arrows-alt" ></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="full-vid">
+            
+            <video   id="myVideo" pause  muted  src="videos/valorant.mp4" onmouseover="show()" onmouseout="hide() " ></video>
+            <!--start player-->
+            <div class="controls"onmouseover="show()"onmouseout="hide()">
+                <i class="fa fa-play-circle playic"onclick="state()"></i>
+                <i class="fa fa-pause-circle playic" aria-hidden="true" onclick="state()" style="display:none;"></i>
+                <p><span id="current_vid_time"  >0</span>:<span id="sec">00</span>/<span class="vid-end">00</span>:<span class="vid-end">00</span></p>
+                
+                <i class="fa fa-undo ico" aria-hidden="true" onclick="backward()"></i>
+                <div class="vidprog">
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                </div>
+                <i class="fa fa-repeat ico" aria-hidden="true" onclick="forward()"></i>
+                <i class="fa fa-volume-off ico" aria-hidden="true" onclick="mute()"></i>
+
+                <i class="fa fa-plus-circle ico" aria-hidden="true" onclick="volup()"></i>
+                <i class="fa fa-minus-circle ico" aria-hidden="true"onclick="voldown()"></i>
+
+            </div>
+            <!--end-->
+            <div id="overlay" >
+                <h4 onclick="l()" id="close"  >x</h4>
+            </div>
+        </div> 
+        <!--end-->
+        <!--content start-->
+        <div class="review">
+            <p>Think Counter-Strike with hero elements. That's the elevator pitch for Valorant, Riot Games' debut on the competitive first-person shooter scene. I say that not to disparage Valorant, though. In fact, that's what I love most about it, especially since it executes on the formula extremely well. Valorant thrives because of tight, tactical gameplay and a mix of character-based abilities that provide a necessary strategic layer. Although it's a slim package with limited features and barren presentation, Valorant has the potential to be great.
+
+                The core mode of Valorant revolves around five-on-five matches in a best of 25 rounds with two teams of attackers and defenders of bomb sites, switching sides about halfway through. The stakes are high as everyone gets only one life per round, and the focus on precise gunplay with low time-to-kill leaves little margin for error. Teams must account for buying guns, armor, and ability charges based on money allocated (depending on performance) on a per-round basis. In turn, each round maintains a high level of intensity as the tide of advantage can shift at any moment.
+               </p> 
+               <p> 
+                Agents introduce an essential X-factor to the mix with their unique abilities as well. While it's easy to compare them to heroes/classes from other games, Valorant's Agent abilities function more like gear in a loadout. Two are subject to limited uses per round (but thankfully carry over even if you're killed) while a default ability subject to cooldown or replenish upon kills. Knowing how and when to execute these abilities, including Ultimates that can come in clutch, is key especially for highly competitive matches.
+
+                I love playing as Raze, an offensive Agent who wields a variety of powerful explosives and a devastating rocket launch as an Ultimate. Another personal favorite, Jett, has the gift of mobility that can either throw off opponents, get better vision of the action, or simply charge the enemy aggressively. As Sage, the revive Ultimate can be a game-changer, while her ice barrier can cut off dangerous sightlines at key moments. And her healing spell could just be the difference in whether or not a teammate comes out alive in a firefight.            </p>
+            <!--start slideshow-->
+            <div class="slidecontainer">
+
+                <div class="slideshow">
+                    <img  src="img/v1.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/v2.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/v3.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/v4.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/v5.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/v6.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    
+                </div> 
+            </div>
+            <!--end-->
+         <p>
+            It'd be tough to break down the abilities of all 11 agents, but their purposes are easy to parse through the four different roles. Each Agent has the capacity to be effective without feeling like a chore to play. Understanding their use cases will put you in a better position to win, even more so when used in conjunction with teammates. For a common example, Sova's motion sensor arrows can easily set up an aggressive push and create an opportunity to get the most out of an offensive Agent's Ultimate. Familiarity with all these mechanics will also inform you on how to react when you see your opponent using similar tactics--it all seems well-balanced at this point.
+         </p>
+         <p>
+            Now, this isn't your typical shooter. Every gun has a specific recoil pattern you'll need to understand before being able to handle them properly. And you'll need to get in the habit of effectively peeking around corners as you move into firefights and holding specific sightlines to anticipate enemy activity. There's a distinct, tempered pace to how it's played, further emphasized by the importance of sound. Footsteps, gunfire, and abilities going off will tip you on enemy positions and strategies. This is all to say that Valorant maintains a certain calculated design that ushers in the fun mental aspect you'd expect from a good tactical shooter.
+
+
+         </p>
+         <p>
+            Valorant's dynamics are enough to sustain it as a competitive shooter worth investing time into because winning itself is an intrinsic reward built on the merits of strong gameplay. The time-tested demolition mode remains an enticing context for thrilling FPS moments because of how much it stresses skill and strategy, just like Counter-Strike or Rainbow Six Siege.
+
+
+         </p>
+            <!--system req start-->
+            <h1>System requirements</h1>
+            <div class="req">
+                
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">Minmum requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                       
+ 
+                    </tr>
+                    <tr>
+                        <td>core i3-4340</td>
+                        <td>gtx 670</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>175g</td>
+
+                    </tr>
+        
+  
+                </table>
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">recommended requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                    </tr>
+                    <tr>
+                        <td>core i5-2500k</td>
+                        <td>gtx 970</td>
+                        <td>16g</td>
+                        <td>windows 10</td>
+                        <td>175g</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+      
+            <p>
+                Valorant's dynamics are enough to sustain it as a competitive shooter worth investing time into because winning itself is an intrinsic reward built on the merits of strong gameplay. The time-tested demolition mode remains an enticing context for thrilling FPS moments because of how much it stresses skill and strategy, just like Counter-Strike or Rainbow Six Siege.
+
+            </p>
+            <p>
+                However, it cuts both ways as the experience can sometimes devolve into frustration. It's not necessarily Valorant's fault; rather, it's inherent to this style of game. Being stuck with a poorly coordinated team will make these long-winded matches feel like a drag. You'll be understandably punished for leaving, and the team will proceed with one less player who won't be backfilled, compounding the disadvantage. It's one area we expect the Valorant experience to improve with ranked matchmaking. Squadding up with friends mitigates the problem, of course, and at least in my experience, random teammates have been willing to work together and coordinate more often than not.
+
+            </p>
+            <p>
+                Overall, Valorant has a strong foundation in its gameplay, and of course, that's the most significant part for an FPS of this style to succeed. Although it doesn't break new ground, the dynamic of sharp gunplay and Agent abilities would make Counter-Strike and Overwatch proud. Valorant easily captures the competitive highs of a good, intense match at the risk of pigeonholing you in a bad one. But outside of the standard demolition-style mode and the modified Spike Rush, it's quite barebones. It is important to note that these types of games are always evolving. Regardless, Valorant's in a good state--it's not great, but it certainly can be.
+
+
+            </p>
+        </div>
+
+        <!--start rating-->
+        </div>
+        <div class="rated">
+            
+            <h2 style="color: white; text-align: center;">game rating</h2>
+
+            
+            <section>
+                <div class="probar">
+                    graphic
+                    <div class="bar">
+                        <div class="progress "style="width: 95%;"></div>
+                    </div>
+                    95%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    gameplay
+                    <div class="bar">
+                        <div class="progress "style="width: 70%;"></div>
+                    </div>
+                    80%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    controls
+                    <div class="bar">
+                        <div class="progress"style="width: 80%;"></div>
+                    </div>80%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    optimaizing
+                    <div class="bar ">
+                        <div class="progress " style="width: 85%;"></div>
+                    </div>85%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    servers
+                    <div class="bar">
+                        <div class="progress "style="width: 94%;"></div>
+                    </div>94%
+                </div>
+            </section>
+    </div>
+
+
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/player.js"></script>
+    </body>
+</html>

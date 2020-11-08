@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <!--start responsive nav-->
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+        <!--end-->
+        <!--start header-->
+        <div id="banner ">
+            <div id="screen-vid">
+                <video class="vid" autoplay loop muted  src="videos/nfs.mp4"></video>
+            </div>
+  
+            <div id="over" >
+                <div id="info">
+                    <h1>nfs payback</h1>
+                    <h4>developer:<span>ea</span> </h4>
+                    <h4>Rating:<span>teen</span> </h4>
+                    <h4>Platforms: <span>ps4 , xboxone , pc , android</span></h4>
+                    <i onclick="full()" id="full" class="fa fa-arrows-alt" ></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="full-vid">
+            
+            <video   id="myVideo" pause  muted  src="videos/nfs.mp4" onmouseover="show()" onmouseout="hide() "  onclick="pauseVid()"></video>
+            <!--start player-->
+            <div class="controls"onmouseover="show()"onmouseout="hide()">
+                <i class="fa fa-play-circle playic"onclick="state()"></i>
+                <i class="fa fa-pause-circle playic" aria-hidden="true" onclick="state()" style="display:none;"></i>
+                <p><span id="current_vid_time"  >0</span>:<span id="sec">00</span>/<span class="vid-end">00</span>:<span class="vid-end">00</span></p>
+                
+                <i class="fa fa-undo ico" aria-hidden="true" onclick="backward()"></i>
+                <div class="vidprog">
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                </div>
+                <i class="fa fa-repeat ico" aria-hidden="true" onclick="forward()"></i>
+                <i class="fa fa-volume-off ico" aria-hidden="true" onclick="mute()"></i>
+
+                <i class="fa fa-plus-circle ico" aria-hidden="true" onclick="volup()"></i>
+                <i class="fa fa-minus-circle ico" aria-hidden="true"onclick="voldown()"></i>
+
+            </div>
+            <!--end-->
+            <div id="overlay" >
+                <h4 onclick="l()" id="close"  >x</h4>
+            </div>
+        </div> 
+        <!--end-->
+        <!--content start-->
+        <div class="review">
+            <p>
+                Need for Speed Payback is the kind of arcade racer that never requires you to lift your foot off the accelerator. Its brazen drifting is effortlessly achieved with aggressive cornering and feathering the brakes, and judicious bursts of nitrous are your best friend down any stretch of open road. There are few games of its ilk nowadays, but perhaps Payback points to a reason why. Despite its impressive visuals and contemporary trappings, Payback's pick-up-and-play driving model harkens back to Need for Speed Underground and its Fast and the Furious-inspired street racing. Yet, unlike the series' heyday, Payback's arcade sensibilities aren't enough to save the game surrounding it from wallowing in mundanity.
+
+        
+                Where Need for Speed was once heavily influenced by Vin Diesel and co.'s predilection for tuner cars and Japanese imports, it's now taking cues from the more recent Dwayne Johnson-centric entries, with heists and over-the-top action as the order of the day. Set in the fictional US state of Fortune Valley, Payback's derivative tale of betrayal and vengeance takes place against the backdrop of an expansive open world that surprises with its range and variety. The faux-Las Vegas of Silver Rock is a glistening urban jungle of glitz and greed that gradually broadens out into sun-kissed deserts, precarious mountain ranges, and the twisting turns that skirt through its forest wilderness. With a steady framerate and impressive draw distance, Fortune Valley's slice of diverse countryside is picturesque at times, yet its locales are never distinct or memorable enough to make a lasting impression, and speaks to an open world that fulfills its role without ever standing out.
+
+            </p> 
+               <p>
+                And the same can be said of Payback's story. After our three plucky protagonists are double-crossed during a heist gone awry at the game's outset, they set a plan in motion to exact revenge on their conniving defector and the ominous criminal syndicate she represents. It's a simple enough conceit that gives purpose to the game's structure, as you're tasked with defeating various archetypal racing crews in order to earn a shot at your nemesis.
+
+            </p>
+            <!--start slideshow-->
+            <div class="slidecontainer">
+
+                <div class="slideshow">
+                    <img  src="img/n1.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/n2.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/n3.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/n4.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/n5.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/n6.jpg">
+                </div>
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    
+                </div> 
+            </div>
+            
+            <!--end-->
+         <p>
+            It's the type of clichéd story you'd ideally want to turn your brain off for; yet there's not a noticeable shred of self-awareness involved, and its earnesty does it no favours. The dialogue is hammy, but not in a fun B-movie way, and it frequently goes out of its way to reference everything from The Matrix to Dragon Ball Z, with some cringe-inducing millennial slang shoehorned in for good measure. There's also the kind of forced banter that's become commonplace in video games and is dutifully featured here--where, for example, calling someone "Lil' Ty" is absolutely hilarious to anyone within earshot. All of this might have been bearable if the story was confined to intermittent cutscenes, but the narrative is so prevalent in everything you do that there's little respite from its hackneyed storytelling.
+
+
+         </p>
+         <p>
+            Infrequent story missions do at least latch onto the pomp and spectacle of Payback's Fast and the Furious inspiration, but it falters here, too. While these moments of vehicle-based histrionics feature its most visually arresting set pieces, they're frequently spoiled when the game rips control away from you just as things are getting interesting. Whether it's launching an 18-wheeler off a bridge, perilously driving alongside a truck on the wrong side of the road so your partner can hop aboard, or something as simple as using a car transporter as a ramp; as soon as the game deviates from the simple act of driving from point to point, control is wrestled away in favour of canned cutscenes. This might look more cinematic, but being forced to watch a scene you could feasibly control from behind the wheel is incredibly disheartening, and feeds into Payback's inherent dullness.
+
+
+         </p>
+         <p>
+            Like previous Need for Speed games, you'll pull up to checkpoints within the open-world, with race, off-road, drift, drag, and runner events providing plenty of variety. There are also Forza Horizon-esque speed traps and drift challenges spread out across the open-world, and these provide minor distractions on the way to each checkpoint. Race and off-road events speak for themselves, and drift competitions offer an anomalous thrill. Getting your car sideways is so easy that there's a singular pleasure in simply seeing how long you can maintain a drift for, while drag events are short and sweet but soon grow repetitive as you're essentially just staring at a meter to time your gear shifts. Races and time trials are occasionally interspersed between the traditional drag events in an attempt to break up the monotony, but having to heave these cumbersome vehicles around the twisting turns of a race track isn't a great alternative. Meanwhile, runner events focus on police chases and timed dashes between various points on the map.
+
+
+         </p>
+            <!--system req start-->
+            <h1>System requirements</h1>
+            <div class="req">
+                
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">Minmum requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                       
+ 
+                    </tr>
+                    <tr>
+                        <td>core i3-6000</td>
+                        <td>gtx750ti</td>
+                        <td>6g</td>
+                        <td>windows 7</td>
+                        <td>60g</td>
+
+                    </tr>
+        
+  
+                </table>
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">recommended requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                    </tr>
+                    <tr>
+                        <td>core i5-4690k</td>
+                        <td>gtx 1060</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>60g</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+      
+            <p>Approaches to combat also rely on the weapons you scavenge. A typical arsenal made up of rifles, submachine guns, shotguns, and pistols have colored tiers to indicate varying levels of power and rarity. Each gun has a sensible use-case, however, traps and explosives mix things up a bit. This is another aspect in which Fortnite diverges from many other battle royale games; shooting is fast and loose, akin to an arena shooter. Mid-range firefights and close-quarters combat feel more like a fatal dance in and around the structures plopped into the environment. Bunnyhopping with a tactical shotgun is common at close range and spraying assault rifles is standard operation. Fortnite isn't a tactical shooter in the traditional sense, but offers its own bevy of strategic options to keep players on their toes.
+            </p>
+            <p>
+                Enemy engagement still carries the risk you expect from games of this ilk by nature of having one life per match and the relatively quick time-to-kill. Even after downing a Chug Jug for full health and shield, well-placed shots from a legendary or epic weapon will make short work of anyone. However, the brisk pace at which matches move trades unnerving tension for a higher frequency of action. Yet, as with any battle royale game, looting for resources sits at the core of matches and eats up much of your time. The system in place for loot and resource gathering is efficient, but it grows tiresome after consecutive matches as swinging the pickaxe at trees and houses for necessary materials grows increasingly repetitive.
+            </p>
+            <p>Another area in which Fortnite is a bit thin is in its map design, a shortcoming that's twofold. The sprawling lone map features a variety of cute, thematic areas: Its metropolis of Tilted Towers and suburbs of Pleasant Park contrast the swamps of Moisty Mire and the countryside of Anarchy Acres. Regardless, there's a feeling many of the map's landmarks lack sophistication in physical layouts and density in loot placement. To its credit, the map's verticality brings the best out in your construction abilities, but city centers like Tomato Town have little to work with when two squads land in the area. A slightly more intricate town like Snobby Shores is sometimes devoid of useful items. It'd be easier to overlook this if you didn't have to trek across to a nearby town on foot that's likely to have been looted, but such is the case.
+            </p>
+        </div>
+
+        <!--start rating-->
+        </div>
+        <div class="rated">
+            
+            <h2 style="color: white; text-align: center;">game rating</h2>
+
+            
+            <section>
+                <div class="probar">
+                    graphic
+                    <div class="bar">
+                        <div class="progress "style="width: 99%;"></div>
+                    </div>
+                    99%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    gameplay
+                    <div class="bar">
+                        <div class="progress "style="width: 80%;"></div>
+                    </div>
+                    80%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    controls
+                    <div class="bar">
+                        <div class="progress "style="width: 60%;"></div>
+                    </div>60%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    optimaizing
+                    <div class="bar ">
+                        <div class="progress "style="width: 70%;"></div>
+                    </div>70%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    servers
+                    <div class="bar">
+                        <div class="progress"style="width: 55%;"></div>
+                    </div>55%
+                </div>
+            </section>
+    </div>
+
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/player.js"></script>
+    </body>
+</html>

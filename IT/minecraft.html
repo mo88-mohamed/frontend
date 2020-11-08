@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/NavBar.css">
+
+        
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/ContactUsValidation.js" defer></script>
+        <title>Game House</title>
+    </head>
+    <body>
+        <nav>
+            <img src="img/Logo.svg" alt="Logo" class="logo">
+            <a href="index.html">Home</a>
+            <a href="Newspage.html">News</a>
+            <div class="games">
+                <a href="GamesList.html">Games</a>
+                <img src="img/arrow.svg" alt="drop-down arrow icon" class="arrow">
+                <div class="content">
+                    <a href="GamesList.html">Games List</a>
+                    <a href="GamesList.html">PC</a>
+                    <a href="PS4.html">PS4</a>
+                    <a href="xbox.html">Xbox One</a>
+                </div>
+            </div>
+            <div class="search">
+                <div>
+                    <input type="text" name="search" id="search" required>
+                    <label for="search">Search</label>
+                </div>
+                <img src="img/search.svg" alt="search icon">
+            </div>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+
+
+        <!--start responsive nav-->
+        <nav id="newnav">
+            <i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true" onclick="menuop()"></i>
+            <a href="#"><img src="img/logo0.png"></a>
+            <a href="login.html"><input type="button" value="Login" class="login"></a>  
+        </nav>
+        <div id="menu">
+            <ul>
+                <h1 style="float: right;cursor: pointer; " onclick="menucl()">x</h1>
+                <li style="margin-top: 50px;"><a href="index.html"></a>Home</li>
+                  <li><a href="news.html"></a>News</li>
+                  <li><a href="games.html"></a>Games</li>
+            </ul>
+        </div>
+        <!--end-->
+        <!--start header-->
+        <div id="banner ">
+            <div id="screen-vid">
+                <video class="vid" autoplay loop muted  src="videos/mine.mp4"></video>
+            </div>
+  
+            <div id="over" >
+                <div id="info">
+                    <h1 id="game-name">minecraft</h1>
+                    <h4>developer:<span>microsoft</span> </h4>
+                    <h4>Rating:<span>teen</span> </h4>
+                    <h4>Platforms: <span>ps4 , xboxone , pc , android</span></h4>
+                    <i onclick="full()" id="full" class="fa fa-arrows-alt" ></i>
+                </div>
+            </div>
+
+        </div> 
+
+        <div id="full-vid">
+            
+            <video   id="myVideo" pause  muted  src="videos/mine.mp4" onmouseover="show()" onmouseout="hide() "  onclick="pauseVid()"></video>
+            <!--start player-->
+            <div class="controls"onmouseover="show()"onmouseout="hide()">
+                <i class="fa fa-play-circle playic"onclick="state()"></i>
+                <i class="fa fa-pause-circle playic" aria-hidden="true" onclick="state()" style="display:none;"></i>
+                <p><span id="current_vid_time"  >0</span>:<span id="sec">00</span>/<span class="vid-end">00</span>:<span class="vid-end">00</span></p>
+                
+                <i class="fa fa-undo ico" aria-hidden="true" onclick="backward()"></i>
+                <div class="vidprog">
+                    <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                </div>
+                <i class="fa fa-repeat ico" aria-hidden="true" onclick="forward()"></i>
+                <i class="fa fa-volume-off ico" aria-hidden="true" onclick="mute()"></i>
+
+                <i class="fa fa-plus-circle ico" aria-hidden="true" onclick="volup()"></i>
+                <i class="fa fa-minus-circle ico" aria-hidden="true"onclick="voldown()"></i>
+
+            </div>
+            <!--end-->
+            <div id="overlay" >
+                <h4 onclick="l()" id="close"  >x</h4>
+            </div>
+        </div> 
+        <!--end-->
+        <!--content start-->
+        <div class="review">
+            <p>
+                It's immediately apparent after digging into Minecraft on the Xbox 360 that the platform is well suited for Mojang's first-person sandbox-style building adventure. From comfortable controls and the effortlessness of jumping into multiplayer co-op over Xbox Live, to detailed in-game tutorials and a more user-friendly crafting system, this updated yet scaled-down port of the indie hit is deliciously accessible. Total newcomers to the game will no doubt find themselves blissfully swept away by the many opportunities for open-ended creativity found throughout the Xbox 360 edition. While coming to this version after spending lots of time playing Minecraft on PC is a jarring and disappointing experience, the joy of free-form exploring, building, and adventuring in randomly generated blocky worlds is nicely reproduced here.
+
+        
+                The good news is that the essence of what makes Minecraft so absorbing is left untouched. From the second you spawn into your first 3D world, you're punching trees to harvest wood, digging deep into the underground to mine resources, forging handy tools, battling creepers, and building fortresses to year heart's content--or not, depending on personal preferences. You're free to do as you please, unfettered by preconceived objectives, and the slow pace of exploration is balanced by the fun that comes from gradually figuring out the style of play that comes naturally to you.
+
+            </p> 
+               <p> 
+                New built-in tutorial menus and in-game help pop-ups also do an excellent job of explaining the core mechanics early on, which means you won't have to fire up a Web browser and consult a wiki to figure out basic elements. This makes it much easier to get a feel for the game quickly, while also keeping the deeper elements hidden for you to uncover on your own during your travels.
+
+            </p>
+            <!--start slideshow-->
+            <div class="slidecontainer">
+
+                <div class="slideshow">
+                    <img  src="img/m1.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/m2.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/m3.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/m4.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/m5.jpg">
+                </div>
+                <div class="slideshow">
+                    <img src="img/m6.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    <div class="column">
+                    </div>
+                    
+                </div> 
+            </div>
+            <!--end-->
+         <p>
+            Trading in the mouse and keyboard for the Xbox 360 controller is a comfortable transition. While you can't sprint in this edition, a minor problem that sometimes turns long-distance travel into a plodding trek, navigating the world and tackling the many tasks available is an otherwise fluid affair. One of the biggest improvements is the redesigned crafting system that streamlines the item-creation process and makes managing your inventory a lot more digestible. Instead of dropping individual resources into various formulas on the crafting grid to see what you get, all you have to do is open up the crafting menu and select the item you want to build. Hitting the craft button pulls all the necessary materials from your inventory automatically and creates the item. Any materials you're lacking are highlighted in red, which is helpful for tracking them down. It's great to not have to memorize item recipes, and you can forge the gear you need a lot faster using this well-designed system.
+
+
+         </p>
+         <p>
+            Either way it's a good time, and the lack of heinous setup mumbo jumbo is a welcome change of pace. Going one step further, the 360 edition also features split-screen co-op for up to four players. If you've got a large enough screen, a big comfy couch, some tasty beverages, and good grub, then this is the way to go for party play.
+
+
+
+         </p>
+         <p>
+            Unfortunately, a few excellent updates aren't a good trade-off for all of the content from the PC version that's missing. The 360 edition is a port of an older pre-Adventure Update Beta version of the game, which means the features, items, and updates that didn't make the cut this time around are pretty significant, and it shows. The variety of unique biome environments is limited, certain craftable items and resources aren't available, and some of the more exciting creatures are absent. There's no hunger or experience system, no alchemy or weapon buffing, and no Ender Dragon to hunt down and defeat. The free-form Creative mode is MIA too, leaving Survival mode as your only play option.
+
+
+         </p>
+            <!--system req start-->
+            <h1>System requirements</h1>
+            <div class="req">
+                
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">Minmum requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                       
+ 
+                    </tr>
+                    <tr>
+                        <td>core i3-3200</td>
+                        <td>gtx 670</td>
+                        <td>4g</td>
+                        <td>windows 10</td>
+                        <td>60g</td>
+
+                    </tr>
+        
+  
+                </table>
+                <table>
+                    <tr>
+                        <th class="thead" colspan="5">recommended requirements</th>
+                    </tr>
+                    <tr>
+                        <th>cpu</th>
+                        <th>vga</th>
+                        <th>ram</th>
+                        <th>os</th>
+                        <th>storage</th>
+                    </tr>
+                    <tr>
+                        <td>core i5-4000</td>
+                        <td>gtx 970</td>
+                        <td>8g</td>
+                        <td>windows 10</td>
+                        <td>60g</td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+      
+            <p>
+                Unfortunately, a few excellent updates aren't a good trade-off for all of the content from the PC version that's missing. The 360 edition is a port of an older pre-Adventure Update Beta version of the game, which means the features, items, and updates that didn't make the cut this time around are pretty significant, and it shows. The variety of unique biome environments is limited, certain craftable items and resources aren't available, and some of the more exciting creatures are absent. There's no hunger or experience system, no alchemy or weapon buffing, and no Ender Dragon to hunt down and defeat. The free-form Creative mode is MIA too, leaving Survival mode as your only play option.
+
+            </p>
+            <p>
+                Equally disappointing is that maps are no longer infinite. Wander too far in any direction, and you bump into an invisible wall. There's still plenty of room to explore and build, but the world now feels more like a caged-in biodome instead of a sprawling realm to map out. At least you can still build a portal to travel to the hell-like Nether dimension, yet even that region is constrained too. All of this will be less of an issue for new players who've yet to taste the PC extras, and some may even welcome the simplicity. But that same simplicity is enough to spur longtime Minecraft vets to stick with the PC version--at least until downloadable content either fills in the gaps or offers enticing exclusive updates.
+
+            </p>
+            <p>
+                Another area in which Fortnite is a bit thin is in its map design, a shortcoming that's twofold. The sprawling lone map features a variety of cute, thematic areas: Its metropolis of Tilted Towers and suburbs of Pleasant Park contrast the swamps of Moisty Mire and the countryside of Anarchy Acres. Regardless, there's a feeling many of the map's landmarks lack sophistication in physical layouts and density in loot placement. To its credit, the map's verticality brings the best out in your construction abilities, but city centers like Tomato Town have little to work with when two squads land in the area. A slightly more intricate town like Snobby Shores is sometimes devoid of useful items. It'd be easier to overlook this if you didn't have to trek across to a nearby town on foot that's likely to have been looted, but such is the case.
+            </p>
+        </div>
+ 
+        <!--start rating-->
+        </div>
+        <div class="rated">
+            
+            <h2 style="color: white; text-align: center;">game rating</h2>
+
+            
+            <section>
+                <div class="probar">
+                    graphic
+                    <div class="bar">
+                        <div class="progress "style="width: 10%;"></div>
+                    </div>
+                    10%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    gameplay
+                    <div class="bar">
+                        <div class="progress "style="width: 50%;"></div>
+                    </div>
+                    50%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    controls
+                    <div class="bar">
+                        <div class="progress "style="width: 60%;"></div>
+                    </div>60%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    optimaizing
+                    <div class="bar ">
+                        <div class="progress "style="width: 80%;"></div>
+                    </div>80%
+                </div>
+            </section>
+            <section>
+                <div class="probar">
+                    servers
+                    <div class="bar">
+                        <div class="progress "style="width: 60%;"></div>
+                    </div>65%
+                </div>
+            </section>
+    </div>
+
+
+
+        <footer>
+            <div class="top-footer">
+                <div>
+                    <h1>Game House</h1>
+                    <p>This website was designed by a team of 6 students as a collage project.</p>
+                    <ul class="contact-img">
+                        <li><img src="img/phone.svg" alt="phone"></li>
+                        <li><img src="img/mail.svg" alt="email"></li>
+                        <li><img src="img/address.svg" alt="address"></li>
+                    </ul>
+                    <ul class="contact">
+                        <li>010-9876-1937</li>
+                        <li>info@gamehouse.com</li>
+                        <li>21 Helwan Agri. Rd., Maadi, Cairo, Egypt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Quick Links</h1>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Newspage.html">News</a></li>
+                        <li><a href="GamesList.html">Games</a></li>
+                        <li><a href="companypage.html">ea company</a></li>
+                        <li><a href="offersPage.html">offers</a></li>
+                        <li><a href="profilepage.html">profile</a></li>
+                        <li><a href="rateus.html">rate us </a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>Contact Us</h1>
+                    <div id="errorMessage"></div>
+                    <form action="" class="contact-us-form" id="contact-us-form">
+                        <div>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <!-- <input type="email" name="email" id="email" placeholder="Your email address" required> -->
+                        <textarea name="message" id="message" rows="4" placeholder="Message..."></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; 2020 Game House &trade; - All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script src="js/slideshow.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/player.js"></script>
+    </body>
+</html>
